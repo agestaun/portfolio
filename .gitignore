@@ -1,5 +1,5 @@
 # build output, need it to display it on GitHub Pages, so it's not ignored
-# dist/
+dist/
 # generated types
 .astro/
 
