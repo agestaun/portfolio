@@ -43,7 +43,8 @@ const projects = (await getCollection('work'))
 
 				<img
 					alt="Adrian Garcia smiling in a red plaid shirt and tortoise shell glasses"
-					class="rounded"
+					width="480"
+					height="620"
 					src="/portfolio/assets/portrait.jpeg"
 				/>
 			</header>
@@ -155,13 +156,6 @@ const projects = (await getCollection('work'))
 
 	.with-background {
 		position: relative;
-	}
-
-	.rounded {
-		clip-path: circle();
-		object-fit: contain;
-		width: 512px;
-		height: 512px;
 	}
 
 	.with-background::before {
