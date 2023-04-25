@@ -4,20 +4,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
-
-<script>
-	async function downloadPDF() {
-		const response = await fetch("/assets/Adrian_Garcia_CV.pdf");
-		const pdfData = await response.blob();
-	}
-
-</script>
-
 <BaseLayout title="About | Adrian Garcia" description="About Adrian Garcia">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero title="Resume" tagline="Get my resume in PDF format">
-				<a href="/assets/cv/Adrian_Garcia_CV.pdf" download="Adrian Garcia CV.pdf">
+				<a href="/portfolio/assets/cv/Adrian_Garcia_CV.pdf" download="Adrian Garcia CV.pdf">
 				<button>Download Resume</button>
 				</a>
 			</Hero>
