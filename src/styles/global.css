@@ -129,6 +129,22 @@ body {
 	line-height: 1.5;
 }
 
+button {
+	background-color: var(--accent-regular);
+	border: none;
+	color: white;
+	padding: 12px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: var(--font-body);
+	font-size: var(--text-lg);
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 100px;
+	flex-shrink: 1;
+}
+
 *,
 *::after,
 *::before {

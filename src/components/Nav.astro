@@ -7,16 +7,14 @@ const textLinks: { label: string; href: string }[] = [
 	{ label: 'Home', href: '/' },
 	{ label: 'Work', href: '/work/' },
 	{ label: 'About', href: '/about/' },
+	{ label: 'Resume', href: '/resume/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
-	{ label: 'Twitter', href: 'https://twitter.com/me', icon: 'twitter-logo' },
-	{ label: 'Twitch', href: 'https://twitch.tv/me', icon: 'twitch-logo' },
-	{ label: 'GitHub', href: 'https://github.com/me', icon: 'github-logo' },
-	{ label: 'CodePen', href: 'https://codepen.io/me', icon: 'codepen-logo' },
-	{ label: 'dribbble', href: 'https://dribbble.com/me', icon: 'dribbble-logo' },
-	{ label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'youtube-logo' },
+	{ label: 'Linkedin', href: 'https://www.linkedin.com/in/adrian-garcia-estaun/', icon: 'linkedin-logo' },
+	{ label: 'GitHub', href: 'https://github.com/agestaun', icon: 'github-logo' },
+	{ label: 'Medium', href: 'https://medium.com/@adrian.garcia.estaun', icon: 'medium-logo' },
 ];
 ---
 
@@ -24,7 +22,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 	<div class="menu-header">
 		<a href="/" class="site-title">
 			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
-			Jeanine White
+			Adrian Garcia
 		</a>
 		<menu-button>
 			<template>
@@ -62,7 +60,7 @@ const iconLinks: { label: string; href: string; icon: IconProps['icon'] }[] = [
 			<div class="socials">
 				{
 					iconLinks.map(({ href, icon, label }) => (
-						<a href={href} class="social">
+						<a target="_blank" href={href} class="social">
 							<span class="sr-only">{label}</span>
 							<Icon icon={icon} />
 						</a>
