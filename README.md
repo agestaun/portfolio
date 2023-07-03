@@ -1,5 +1,7 @@
 # Astro Starter Kit: Portfolio
 
+Check the portfolio [here](https://agestaun.github.io/portfolio/).
+
 ```
 npm create astro@latest -- --template portfolio
 ```
